@@ -1,16 +1,15 @@
 #include <iostream>
-#include <thread>
 #include <vector>
 #include <chrono>
 #include <cstdlib>
+#include <future>
 
 const long long AMOUNT_TO_INCREMENT_BY = 5000000000LL;
 
-void NumberIterator(volatile long long *number, long long count) {
-	volatile long long localNumber = *number;
-	count += localNumber;
-	while(localNumber<count) ++localNumber;
-	*number = localNumber;
+long long NumberIterator(volatile long long number, long long count) {
+	count += number;
+	while(number<count) ++number;
+	return number;
 }
 
 int main(int argc, char **argv) {
@@ -29,22 +28,18 @@ int main(int argc, char **argv) {
 		*((long long*)&data[i*64]) = 0LL;
 	}
 
-	std::vector<std::thread> myThreads;
-	myThreads.reserve(numberOfThreads);
+	std::vector<std::future<long long>> myTasks;
+	myTasks.reserve(numberOfThreads);
 
 	auto timeVal = std::chrono::steady_clock::now();
 
 	for(int i=0; i<numberOfThreads; ++i)
-		myThreads.push_back(std::thread(NumberIterator, (long long*)&data[i*64], amountToIncrementByPerThread));
+		myTasks.emplace_back(std::async(std::launch::async, NumberIterator, 0, amountToIncrementByPerThread));
 
-	for(auto &i: myThreads)
-		i.join();
+	for(auto &i: myTasks)
+		number += i.get();
 
-	for(int i=0; i<numberOfThreads; i++) {
-		number += *((long long*)&data[i*64]);
-	}
-
-	NumberIterator(&number, amountLeftOver);
+	number = NumberIterator(number, amountLeftOver);
 
 	std::chrono::duration<double> timePassed = std::chrono::steady_clock::now()-timeVal;
 
