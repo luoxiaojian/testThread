@@ -1,0 +1,120 @@
+Log file created at: 2017/04/19 00:54:23
+Running on machine: bd3
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0419 00:54:23.838698   793 util.cc:50] "livejournal-sssp-4"
+I0419 00:54:23.839006   793 worker.cc:90] The query is /home/ubuntu/luoxiaojian/dataset/sssp-query/livejournal-sssp-4
+I0419 00:54:23.839092   793 worker.cc:99] query_info=file:/home/ubuntu/luoxiaojian/dataset/sssp-query/livejournal-sssp-4
+I0419 00:54:23.839990   793 worker.cc:121] [coordinator] PEval begins.
+I0419 00:54:26.943150   793 worker.cc:131] [coordinator] PEval finishes.
+I0419 00:54:27.574290   793 worker.cc:133] [coordinator] IncEval - 1 begins.
+I0419 00:54:33.139359   793 worker.cc:144] [coordinator] IncEval - 1 finishes.
+I0419 00:54:39.691015   793 worker.cc:133] [coordinator] IncEval - 2 begins.
+I0419 00:54:46.957077   793 worker.cc:144] [coordinator] IncEval - 2 finishes.
+I0419 00:54:51.621533   793 worker.cc:133] [coordinator] IncEval - 3 begins.
+I0419 00:54:55.910965   793 worker.cc:144] [coordinator] IncEval - 3 finishes.
+I0419 00:54:57.850486   793 worker.cc:133] [coordinator] IncEval - 4 begins.
+I0419 00:54:59.402359   793 worker.cc:144] [coordinator] IncEval - 4 finishes.
+I0419 00:55:00.176512   793 worker.cc:133] [coordinator] IncEval - 5 begins.
+I0419 00:55:00.773150   793 worker.cc:144] [coordinator] IncEval - 5 finishes.
+I0419 00:55:01.010229   793 worker.cc:133] [coordinator] IncEval - 6 begins.
+I0419 00:55:01.226680   793 worker.cc:144] [coordinator] IncEval - 6 finishes.
+I0419 00:55:01.279916   793 worker.cc:133] [coordinator] IncEval - 7 begins.
+I0419 00:55:01.346968   793 worker.cc:144] [coordinator] IncEval - 7 finishes.
+I0419 00:55:01.353226   793 worker.cc:133] [coordinator] IncEval - 8 begins.
+I0419 00:55:01.359308   793 worker.cc:144] [coordinator] IncEval - 8 finishes.
+I0419 00:55:01.362061   793 worker.cc:133] [coordinator] IncEval - 9 begins.
+I0419 00:55:01.517978   793 worker.cc:144] [coordinator] IncEval - 9 finishes.
+I0419 00:55:01.520530   793 worker.cc:180] [coordinator] finished computation.
+I0419 00:55:40.957095   793 worker.cc:192] [coordinator] finished result assem.
+I0419 00:55:40.957202   793 metrics.cc:96] --------------------------------------------------
+I0419 00:55:40.957214   793 metrics.cc:97] algorithm: sssp
+I0419 00:55:40.957223   793 metrics.cc:98] dataset-vfile: /home/ubuntu/luoxiaojian/dataset/livejournal/livejournal.v
+I0419 00:55:40.957231   793 metrics.cc:99] dataset-efile: /home/ubuntu/luoxiaojian/dataset/livejournal/livejournal.e
+I0419 00:55:40.957239   793 metrics.cc:100] partition-num: 50
+I0419 00:55:40.957247   793 metrics.cc:101] loading-strategy: 0
+I0419 00:55:40.957255   793 metrics.cc:102] query-info: file:/home/ubuntu/luoxiaojian/dataset/sssp-query/livejournal-sssp-4
+I0419 00:55:40.957264   793 metrics.cc:103] --------------------------------------------------
+I0419 00:55:40.957271   793 metrics.cc:104] graph-loading-time: 539.762s
+I0419 00:55:40.957316   793 metrics.cc:105] grape-total-time: 77.1172s
+I0419 00:55:40.957327   793 metrics.cc:106] grape-evaluation-time: 22.8184s
+I0419 00:55:40.957340   793 metrics.cc:108] grape-assemble-time: 39.4365s
+I0419 00:55:40.957351   793 metrics.cc:110] grape-communication-time: 14.8502s
+I0419 00:55:40.957360   793 metrics.cc:112] 	-- comm-serialization-time: 0.000159979s
+I0419 00:55:40.957371   793 metrics.cc:114] 	-- comm-traffic-time: 9.92052s
+I0419 00:55:40.957381   793 metrics.cc:116] grape-message-count: 16716416
+I0419 00:55:40.957392   793 metrics.cc:117] grape-rounds: 10
+I0419 00:55:40.957401   793 metrics.cc:118] <------------------------------------------------>
+I0419 00:55:40.957408   793 metrics.cc:121] rnd-0: t=3.103203s	cmt-0=258514
+I0419 00:55:40.957424   793 metrics.cc:121] rnd-1: t=5.565134s	cmt-1=7695390
+I0419 00:55:40.957434   793 metrics.cc:121] rnd-2: t=7.266163s	cmt-2=5278400
+I0419 00:55:40.957444   793 metrics.cc:121] rnd-3: t=4.289567s	cmt-3=2383423
+I0419 00:55:40.957453   793 metrics.cc:121] rnd-4: t=1.551988s	cmt-4=848703
+I0419 00:55:40.957473   793 metrics.cc:121] rnd-5: t=0.596709s	cmt-5=217432
+I0419 00:55:40.957484   793 metrics.cc:121] rnd-6: t=0.216526s	cmt-6=31973
+I0419 00:55:40.957495   793 metrics.cc:121] rnd-7: t=0.067088s	cmt-7=2496
+I0419 00:55:40.957505   793 metrics.cc:121] rnd-8: t=0.006116s	cmt-8=85
+I0419 00:55:40.957516   793 metrics.cc:121] rnd-9: t=0.155942s	cmt-9=0
+I0419 00:55:40.957527   793 metrics.cc:126] !------------------------------------------------!
+I0419 00:55:40.957536   793 metrics.cc:128] ---------super step 0 time record-------------
+I0419 00:55:40.957550   793 metrics.cc:131] [worker_5]	0.786794
+I0419 00:55:40.957562   793 metrics.cc:131] [worker_1]	3.102760
+I0419 00:55:40.957574   793 metrics.cc:131] [worker_2]	1.117714
+I0419 00:55:40.957597   793 metrics.cc:131] [worker_3]	0.876821
+I0419 00:55:40.957607   793 metrics.cc:131] [worker_4]	0.861612
+I0419 00:55:40.957629   793 metrics.cc:128] ---------super step 1 time record-------------
+I0419 00:55:40.957639   793 metrics.cc:131] [worker_5]	4.397463
+I0419 00:55:40.957650   793 metrics.cc:131] [worker_1]	4.045625
+I0419 00:55:40.957661   793 metrics.cc:131] [worker_2]	5.423157
+I0419 00:55:40.957672   793 metrics.cc:131] [worker_3]	4.095211
+I0419 00:55:40.957682   793 metrics.cc:131] [worker_4]	5.564139
+I0419 00:55:40.957693   793 metrics.cc:128] ---------super step 2 time record-------------
+I0419 00:55:40.957715   793 metrics.cc:131] [worker_5]	6.011143
+I0419 00:55:40.957728   793 metrics.cc:131] [worker_1]	7.265234
+I0419 00:55:40.957741   793 metrics.cc:131] [worker_2]	6.441877
+I0419 00:55:40.957751   793 metrics.cc:131] [worker_3]	6.589577
+I0419 00:55:40.957762   793 metrics.cc:131] [worker_4]	5.706450
+I0419 00:55:40.957772   793 metrics.cc:128] ---------super step 3 time record-------------
+I0419 00:55:40.957779   793 metrics.cc:131] [worker_5]	3.349650
+I0419 00:55:40.957789   793 metrics.cc:131] [worker_1]	3.604923
+I0419 00:55:40.957799   793 metrics.cc:131] [worker_2]	3.309684
+I0419 00:55:40.957809   793 metrics.cc:131] [worker_3]	3.969864
+I0419 00:55:40.957819   793 metrics.cc:131] [worker_4]	4.288713
+I0419 00:55:40.957840   793 metrics.cc:128] ---------super step 4 time record-------------
+I0419 00:55:40.957850   793 metrics.cc:131] [worker_5]	1.340182
+I0419 00:55:40.957880   793 metrics.cc:131] [worker_1]	1.270521
+I0419 00:55:40.957891   793 metrics.cc:131] [worker_2]	1.551389
+I0419 00:55:40.957902   793 metrics.cc:131] [worker_3]	1.386560
+I0419 00:55:40.957913   793 metrics.cc:131] [worker_4]	1.353141
+I0419 00:55:40.957924   793 metrics.cc:128] ---------super step 5 time record-------------
+I0419 00:55:40.957934   793 metrics.cc:131] [worker_5]	0.510838
+I0419 00:55:40.957957   793 metrics.cc:131] [worker_1]	0.491128
+I0419 00:55:40.957967   793 metrics.cc:131] [worker_2]	0.596267
+I0419 00:55:40.957989   793 metrics.cc:131] [worker_3]	0.450247
+I0419 00:55:40.957999   793 metrics.cc:131] [worker_4]	0.503390
+I0419 00:55:40.958029   793 metrics.cc:128] ---------super step 6 time record-------------
+I0419 00:55:40.958041   793 metrics.cc:131] [worker_5]	0.185185
+I0419 00:55:40.958055   793 metrics.cc:131] [worker_1]	0.202267
+I0419 00:55:40.958065   793 metrics.cc:131] [worker_2]	0.214914
+I0419 00:55:40.958076   793 metrics.cc:131] [worker_3]	0.215879
+I0419 00:55:40.958087   793 metrics.cc:131] [worker_4]	0.189850
+I0419 00:55:40.958098   793 metrics.cc:128] ---------super step 7 time record-------------
+I0419 00:55:40.958108   793 metrics.cc:131] [worker_5]	0.037152
+I0419 00:55:40.958132   793 metrics.cc:131] [worker_1]	0.047902
+I0419 00:55:40.958143   793 metrics.cc:131] [worker_2]	0.066573
+I0419 00:55:40.958155   793 metrics.cc:131] [worker_3]	0.044674
+I0419 00:55:40.958168   793 metrics.cc:131] [worker_4]	0.041802
+I0419 00:55:40.958179   793 metrics.cc:128] ---------super step 8 time record-------------
+I0419 00:55:40.958189   793 metrics.cc:131] [worker_5]	0.003759
+I0419 00:55:40.958201   793 metrics.cc:131] [worker_1]	0.004591
+I0419 00:55:40.958214   793 metrics.cc:131] [worker_2]	0.005522
+I0419 00:55:40.958237   793 metrics.cc:131] [worker_3]	0.004078
+I0419 00:55:40.958250   793 metrics.cc:131] [worker_4]	0.003977
+I0419 00:55:40.958271   793 metrics.cc:128] ---------super step 9 time record-------------
+I0419 00:55:40.958286   793 metrics.cc:131] [worker_5]	0.000560
+I0419 00:55:40.958297   793 metrics.cc:131] [worker_1]	0.000707
+I0419 00:55:40.958309   793 metrics.cc:131] [worker_2]	0.000487
+I0419 00:55:40.958320   793 metrics.cc:131] [worker_3]	0.155410
+I0419 00:55:40.958333   793 metrics.cc:131] [worker_4]	0.000336
+I0419 00:55:40.958869   793 worker.cc:87] all queries in the workload is processed. 
+I0419 00:55:40.958889   793 worker.cc:99] query_info=
+I0419 00:55:40.959730   793 worker.cc:107] [coordinator] shutdown.
